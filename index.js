@@ -52,6 +52,7 @@ app.get(
         disableTotal: false,
         limit: 16,
         cursor: cursor || null,
+        normalizeMetadata: true
       });
 
       handleResponse(res, 200, "Success", response.toJSON());
