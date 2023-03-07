@@ -45,6 +45,7 @@ app.get(
       const { cursor } = req.query;
 
       //   http://localhost:3000/api/v1/all-nfts/0xd8da6bf26964af9d7eed9e03e53415d37aa96045/ETHEREUM
+      // http://localhost:3000/api/v1/all-nfts/0x70417e99f63c0eed3b5ba95b23d35ef08cd004c7/ETHEREUM
 
       const response = await Moralis.EvmApi.nft.getWalletNFTs({
         address,
