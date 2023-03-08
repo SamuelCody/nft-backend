@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://master--super-kangaroo-bb3c20.netlify.app/"],
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     credentials: true,
   })
@@ -53,7 +53,7 @@ app.get(
         disableTotal: false,
         limit: 16,
         cursor: cursor || null,
-        normalizeMetadata: true
+        normalizeMetadata: true,
       });
 
       handleResponse(res, 200, "Success", response.toJSON());
