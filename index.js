@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(
   cors({
-    origin: ["https://master--super-kangaroo-bb3c20.netlify.app/"],
+    origin: ["https://super-kangaroo-bb3c20.netlify.app"],
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     credentials: true,
   })
